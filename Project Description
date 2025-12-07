@@ -2,7 +2,7 @@
 This project is a SQL-based management system that handles multiple entities in a horse training or boarding center.
 The system provides structured SQL queries that allow administrators to:
 
-🐎 Manage Horses
+- Manage Horses
 
 Retrieve total number of horses
 
@@ -11,3 +11,44 @@ View full horse details including meal type and required needs
 Filter horses based on meal count, gender, or feeding requirements
 
 Calculate total daily meals for all horses
+Manage Members
+
+Retrieve members with specific first/last names
+
+View all members along with their subscription type
+
+Count the total number of members
+
+Filter members by subscription type (1, 2, or 3)
+
+- Manage Employees
+
+Retrieve company owners
+
+Fetch employees who have full names
+
+Search employees whose names contain "Mohammad"
+
+Count total employees
+
+Identify oldest employees by ID
+
+Filter employees based on working days or weekend schedule
+
+- Database Entities Overview
+
+The system uses relational tables such as:
+
+Hourses
+
+HourseMealTypes
+
+HourseNeededs
+
+Members
+
+MemberTypes
+
+Employees
+
+These are linked through foreign keys such as MealType, HourseNeeded, and MemberType to generate complete joined results.
