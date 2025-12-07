@@ -1,0 +1,23 @@
+- Count Horses
+SELECT count(*) FROM Hourses;
+
+- View Horses with All Details
+SELECT * FROM Hourses h 
+INNER JOIN HourseMealTypes hmt ON h.MealType = hmt.Id 
+INNER JOIN HourseNeededs hn ON h.HourseNeeded = hn.Id 
+ORDER BY h.Id DESC;
+
+- Count Total Meal Portions
+SELECT SUM(h.MealCount) FROM Hourses h;
+
+- Retrieve Members with Specific Names
+SELECT * FROM Members m 
+WHERE m.FirstName LIKE 'mohmmad' 
+AND m.LastName LIKE 'test' 
+ORDER BY m.Id ASC;
+
+- Employees Working Full Week Except Fri/Sat
+SELECT * FROM Employees e 
+WHERE e.Sunday=1 AND e.Monday=1 AND e.Tuesday=1 
+AND e.Wednesday=1 AND e.Thursday=1 
+AND e.Friday=0 AND e.Saturday=0;
