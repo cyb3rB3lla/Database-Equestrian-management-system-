@@ -1,0 +1,13 @@
+
+This project is a SQL-based management system that handles multiple entities in a horse training or boarding center.
+The system provides structured SQL queries that allow administrators to:
+
+🐎 Manage Horses
+
+Retrieve total number of horses
+
+View full horse details including meal type and required needs
+
+Filter horses based on meal count, gender, or feeding requirements
+
+Calculate total daily meals for all horses
